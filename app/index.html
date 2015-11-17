@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="no-js" ng-app>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cafe51</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <main>
+      <header>
+          <a href="" class="logo">Cafe51</a>
+          <button class="lines-button x" type="button" role="button" aria-label="Toggle Navigation">
+            <span class="lines"></span>
+          </button>
+      </header>
+      <nav>
+          <ul class="menu-items">
+            <li><a href="" title="HISTORIA DEL CAFÉ">HISTORIA DEL CAFÉ</a></li>
+            <li><a href="" title="MERCADO">MERCADO</a></li>
+            <li><a href="" title="GASTRONOMÍA">GASTRONOMÍA</a></li>
+            <li><a href="industrial.html" title="ELABORACIÓN PARA INDUSTRIA">ELABORACIÓN PARA INDUSTRIA</a></li>
+            <li><a href="" title="CONTACTO">CONTACTO</a></li>
+          </ul>
+      </nav><!-- nav -->
+
+      <article>
+
+        <section data-aload class="col-12 main-promo">
+            <div class="promo-separator">
+              <h1>SABOR Y AROMA<br/> EN SU MAYOR EXPRESION</h1>
+              <hr>
+              <div class="overlay">
+                <h2>Unidos al Café desde 1904</h2>
+              </div>
+            </div>
+        </section><!-- main-promo -->
+
+        <section data-aload class="col-6 block-promo gastronomia">
+          <h2>Gastronomia</h2>
+        </section>
+
+        <section data-aload class="col-6 block-promo mercado">
+          <h2>Mercado</h2>
+        </section>
+
+        <section data-aload class="col-12 block-promo industria">
+          <h2>Industria</h2>
+        </section>
+
+        <section data-aload class="col-12 footer-promo">
+          <h1>LA VIDA COMIENZA DESPUÉS DE UN BUEN CAFÉ</h1>
+          <hr class="secondary">
+        </section>
+      </article>
+
+    </main>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- Aload.js -->
+    <script>
+      function aload(t){"use strict";t=t||window.document.querySelectorAll("[data-aload]"),void 0===t.length&&(t=[t]);var a,e=0,r=t.length;for(e;r>e;e+=1)a=t[e],a["LINK"!==a.tagName?"src":"href"]=a.getAttribute("data-aload"),a.removeAttribute("data-aload");return t}
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
