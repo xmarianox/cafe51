@@ -300,7 +300,55 @@ hr {
 // gastronomia
 .gastronomia {
   padding-bottom: 40px;
+  .main-promo {
+    background: url(../images/img-main-gastronomia.jpg) center center no-repeat;
+    background-size: cover;
+    @include size(100%, 650px);
 
-  
+    .promo-separator {
+        @include size(auto, auto);
+        position: absolute;
+        left: -10px;
+        right: auto;
+        top: 15%;
+        bottom: auto;
+        margin: 0;
 
+        h1 {
+          margin: 0 40px;
+          @include font-size(48px);
+          small {
+            @include font-size(38px);
+          }
+          em {
+            @include font-size(61px);
+          }
+        }
+        hr {
+          @include size(100%, auto);
+          margin: 15px 0;
+        }
+        p {
+          font-family: 'CenturyGothic';
+          @include font-size(25px);
+          text-align: right;
+          padding-left: 20px;
+        }
+      }
+  }
+  .bajada {
+    padding: 30px;
+  }
+  h2 {
+    font-family: 'CenturyGothic-Bold';
+    @include font-size(25px);
+    line-height: 40px;
+    color: $brown;
+    font-weight: bold;
+  }
+  p {
+    font-family: 'CenturyGothic';
+    @include font-size(25px);
+    line-height: 40px;
+  }
 }
