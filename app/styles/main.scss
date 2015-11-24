@@ -135,6 +135,7 @@ nav {
 
     a {
       text-decoration: none;
+      display: block;
       color: $white;
     }
   }
@@ -363,6 +364,7 @@ hr {
   }
 }
 
+// historia
 .historiaView {
   padding-bottom: 40px;
 
@@ -412,6 +414,51 @@ hr {
   }
 }
 
+// industrial
+.mercadoView {
+  padding-bottom: 40px;
+  .main-promo {
+      background: url(../images/img-main-mercado.jpg) center center no-repeat;
+      background-size: cover;
+      @include size(100%, 650px);
+      overflow: hidden;
+      color: $white;
+      position: relative;
+
+      .promo-separator {
+        @include size(auto, auto);
+        position: absolute;
+        left: auto;
+        right: 0;
+        top: 10%;
+        bottom: auto;
+        margin: 0;
+
+        h1 {
+          margin: 0 40px;
+          @include font-size(42px);
+
+          small {
+            @include font-size(38px);
+          }
+          em {
+            @include font-size(61px);
+          }
+        }
+        hr {
+          @include size(130%, auto);
+          margin: 15px 0;
+        }
+        p {
+          font-family: 'CenturyGothic';
+          @include font-size(25px);
+          text-align: left;
+          padding-left: 20px;
+        }
+      }
+  }
+}
+
 .contactoView {
   padding-bottom: 40px;
   .main-promo {
@@ -440,4 +487,147 @@ hr {
         }
       }
   }
+}
+
+
+
+/*
+ *  Ajustes responsive
+ */
+// ipad land
+@media (max-width: 1024px) {
+  .main-promo,
+  .historiaView .main-promo,
+  .gastronomiaView .main-promo,
+  .industrialView .main-promo,
+  .mercadoView .main-promo  {
+    @include size(100%, 500px);
+  }
+}
+// ipad port
+@media (max-width: 768px) {}
+// tablet android port
+@media (max-width: 600px) {}
+// iphone 6+/6s+ port
+@media (max-width: 414px) {
+  .lines-button {
+    margin-right: 16px;
+  }
+  nav {
+    @include size(100%, auto);
+  }
+  .menu-items {
+    li {
+      padding: 0 16px;
+      @include font-size(22px);
+    }
+  }
+  // main
+  h1 {
+    @include font-size(30px);
+  }
+  //main
+  .main-promo {
+    .promo-separator {
+      margin: 30% auto;
+      .overlay {
+        h2 {
+          @include font-size(26px);
+         }
+      }
+    }
+  }
+  .block-promo {
+    @include size(100%, 350px);
+    h2 {
+      @include font-size(30px);
+    }
+  }
+  // historia
+  .historiaView {
+    .main-promo {
+      .promo-separator {
+        h1 {
+          @include font-size(30px);
+        }
+      }
+    }
+
+    p {
+      @include font-size(18px);
+    }
+  }
+  // gastronomia
+  .gastronomiaView {
+    .main-promo {
+      .promo-separator {
+        top: 25%;
+        h1 {
+          @include font-size(32px);
+
+          small {
+            @include font-size(25px);
+          }
+          em {
+            @include font-size(40px);
+          }
+        }
+        p {
+          @include font-size(20px);
+        }
+      }
+    }
+
+    p {
+      @include font-size(18px);
+    }
+  }
+  // industrial
+  .industrialView {
+    .main-promo {
+      .promo-separator {
+        h1 {
+          small {
+            @include font-size(22px);
+          }
+          em {
+            @include font-size(55px);
+          }
+        }
+        p {
+          @include font-size(20px);
+        }
+      }
+    }
+    .content-text-industria {
+      padding: 40px 16px;
+    }
+    h2 {
+      @include font-size(22px);
+    }
+  }
+
+    // mercado
+  .mercadoView {
+    .main-promo {
+      .promo-separator {
+        h1 {
+          @include font-size(30px);
+          small {
+            @include font-size(27px);
+          }
+          em {
+            @include font-size(43px);
+          }
+        }
+        p {
+          @include font-size(20px);
+        }
+      }
+    }
+
+  }
+
+
+
 }
