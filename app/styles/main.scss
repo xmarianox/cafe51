@@ -606,8 +606,7 @@ hr {
       @include font-size(22px);
     }
   }
-
-    // mercado
+  // mercado
   .mercadoView {
     .main-promo {
       .promo-separator {
@@ -627,7 +626,112 @@ hr {
     }
 
   }
+}
 
+@media (max-width: 360px) {
+  .menu-items {
+    li {
+      @include font-size(18px);
+    }
+  }
+  //main
+  .main-promo {
+    .promo-separator {
+      h1 {
+        @include font-size(25px);
+      }
+      margin: 30% auto;
+      .overlay {
+        h2 {
+          @include font-size(22px);
+         }
+      }
+    }
+  }
+  .block-promo {
+    h2 {
+      @include font-size(25px);
+    }
+  }
+  // gastronomia
+  .gastronomiaView {
+    .main-promo {
+      .promo-separator {
+        h1 {
+          margin: 0 20px;
+        }
+      }
+    }
+    h2 {
+      @include font-size(22px);
+      line-height: 32px;
+    }
+    p {
+      @include font-size(16px);
+      line-height: 26px;
+    }
+  }
+ // mercado
+  .mercadoView {
+    .main-promo {
+      .promo-separator {
+        h1 {
+          margin: 0 20px;
+        }
+      }
+    }
+  }
+  // industrial
+  .industrialView {
+    .main-promo {
+      .promo-separator {
+        h1 {
+          margin: 0 20px;
+        }
+      }
+    }
+    h2 {
+      @include font-size(18px);
+      line-height: 28px;
+    }
+  }
+  // historia
+  .historiaView {
+    .main-promo {
+      .promo-separator {
+        h1 {
+          @include font-size(25px);
+          margin: 0;
+        }
+      }
+    }
 
+    h2 {
+      @include font-size(22px);
+      line-height: 32px;
+      margin-bottom: 20px;
+    }
 
+    p {
+      @include font-size(16px);
+      line-height: 26px;
+    }
+  }
+  // contacto
+  .contactoView {
+    .main-promo {
+      .promo-separator {
+        h1 {
+          @include font-size(25px);
+          margin: 0 20px;
+        }
+      }
+    }
+  }
+  // footer
+  .footer-promo {
+    h1 {
+      @include font-size(22px);
+    }
+  }
 }
