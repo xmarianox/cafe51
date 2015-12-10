@@ -1,4 +1,6 @@
 // bower:scss
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+@import "../../bower_components/slick-carousel/slick/slick-theme.scss";
 // endbower
 
 @import "variables";
@@ -17,7 +19,7 @@
 }
 
 body {
-  background: $gray;
+  background: $white;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: $black;
 }
@@ -99,7 +101,7 @@ nav {
     @include size(100%, auto);
     padding: 0 30px;
     font-family: 'CenturyGothic';
-    @include font-size(25px);
+    @include font-size(22px);
     line-height: 50px;
     cursor: pointer;
 
@@ -145,7 +147,7 @@ nav {
 // fonts
 h1 {
   font-family: $futuraMD;
-  @include font-size(52px);
+  @include font-size(46px);
 }
 
 //
@@ -183,7 +185,7 @@ article {
 
       h2 {
         font-family: 'CenturyGothic';
-        @include font-size(35px);
+        @include font-size(32px);
       }
     }
   }
@@ -206,7 +208,7 @@ article {
  }
 
   h2 {
-    @include font-size(40px);
+    @include font-size(36px);
     position: absolute;
     left: 0;
     right: 0;
@@ -221,6 +223,7 @@ article {
   text-align: center;
   padding: 45px 0;
   h1 {
+    @include font-size(36px);
     margin-bottom: 45px;
   }
 }
@@ -304,7 +307,7 @@ hr {
   padding: 40px 0;
   text-align: center;
   font-family: 'CenturyGothic';
-  @include font-size(25px);
+  @include font-size(20px);
   line-height: 30px;
 }
 
@@ -359,8 +362,8 @@ hr {
   }
   p {
     font-family: 'CenturyGothic';
-    @include font-size(25px);
-    line-height: 40px;
+    @include font-size(20px);
+    line-height: 30px;
   }
 }
 
@@ -386,7 +389,7 @@ hr {
 
         h1 {
           margin: 0 40px;
-          @include font-size(38px);
+          @include font-size(34px);
         }
       }
   }
@@ -400,16 +403,16 @@ hr {
 
   h2 {
     font-family: 'CenturyGothic-Bold';
-    @include font-size(25px);
-    line-height: 40px;
+    @include font-size(23px);
+    line-height: 33px;
     color: $brown;
     font-weight: bold;
     margin-bottom: 30px;
   }
   p {
     font-family: 'CenturyGothic';
-    @include font-size(25px);
-    line-height: 40px;
+    @include font-size(20px);
+    line-height: 30px;
     text-align: justify;
   }
 }
