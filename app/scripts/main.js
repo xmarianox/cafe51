@@ -1,5 +1,5 @@
 /* jshint smarttabs:true, undef:true */
-/* global $, aload */
+/* global $, aload, slick */
 $(document).ready(function() {
 	'use strict';
 	// init aload
@@ -18,7 +18,8 @@ $(document).ready(function() {
 		infinite: true,
 		speed: 500,
 		fade: true,
-		cssEase: 'linear'
+		cssEase: 'linear',
+		responsive: true
 	});
 
 });

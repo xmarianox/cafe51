@@ -1,8 +1,7 @@
 # TODO: cafe51.com.ar
 
 ## Home:
-En la primera foto va ir otra foto, para que vaya pasando como un slide.
-Estoy esperando que me manden la foto porque es un producto nuevo, asi que tambien falta un producto en la pag de mercado.
+[x] En la primera foto va ir otra foto, para que vaya pasando como un slide.
 
 ## Favicon:
 [x] Logo de Cafe 51.
@@ -12,6 +11,7 @@ Estoy esperando que me manden la foto porque es un producto nuevo, asi que tambi
 
 ## Mercado:
 Puse los productos en el drive (carpeta fotos - Productos) y un doc con los textos (mercado productos)
+Estoy esperando que me manden la foto porque es un producto nuevo, asi que tambien falta un producto en la pag de mercado.
 
 ## Gastronomía:
 [x] Acento en Gastronomía en la fotos
