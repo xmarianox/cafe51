@@ -525,17 +525,22 @@ hr {
         }
       }
   }
+  h2 {
+    font-family: 'CenturyGothic';
+    @include font-size(25px);
+    line-height: 30px;
+  }
 }
-
 .products-list {
   @include size(90%, auto);
   overflow: hidden;
   margin: 0 auto;
 
   li {
-    @include size(100%, auto);
+    @include size(50%, auto);
     display: block;
     text-align: left;
+    float: left;
 
     figure {
       @include size(100%, auto);
