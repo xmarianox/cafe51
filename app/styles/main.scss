@@ -1,4 +1,6 @@
 // bower:scss
+$slick-font-path: "../fonts/" !default;
+$slick-loader-path: "../images/" !default;
 @import "../../bower_components/slick-carousel/slick/slick.scss";
 @import "../../bower_components/slick-carousel/slick/slick-theme.scss";
 // endbower
@@ -190,6 +192,65 @@ article {
     }
   }
 }
+
+/*
+ * Slider home
+ */
+.slick-slider {
+  margin-bottom: 0px;
+}
+.slick-initialized .slick-slide {
+  overflow: hidden;
+  color: $white;
+  text-align: center;
+  position: relative;
+
+  .promo-separator {
+    @include size(100%, auto);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 14% auto;
+
+    hr {
+      margin: 30px auto;
+    }
+
+    .overlay {
+      @include size(100%, auto);
+      background-color: $black-50;
+      padding: 12px;
+
+      h2 {
+        font-family: 'CenturyGothic';
+        @include font-size(32px);
+      }
+    }
+  }
+}
+
+.slick-dots {
+  bottom: 0;
+
+  li {
+    button {
+      &:before {
+        color: $white !important;
+      }
+    }
+
+    &.slick-active {
+      button {
+        &:before {
+          color: $white !important;
+        }
+      }
+    }
+  }
+}
+
 
 .block-promo {
   background-size: cover !important;
@@ -492,14 +553,11 @@ hr {
   }
 }
 
-
-
 /*
  *  Ajustes responsive
  */
 // ipad land
 @media (max-width: 1024px) {
-  .main-promo,
   .historiaView .main-promo,
   .gastronomiaView .main-promo,
   .industrialView .main-promo,
@@ -530,6 +588,9 @@ hr {
     @include font-size(30px);
   }
   //main
+  .slick-slide img {
+    @include size(auto, 500px);
+  }
   .main-promo {
     .promo-separator {
       margin: 30% auto;
