@@ -527,6 +527,43 @@ hr {
   }
 }
 
+.products-list {
+  @include size(90%, auto);
+  overflow: hidden;
+  margin: 0 auto;
+
+  li {
+    @include size(100%, auto);
+    display: block;
+    text-align: left;
+
+    figure {
+      @include size(100%, auto);
+      display: block;
+      overflow: hidden;
+    }
+    img {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    figcaption {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    h3 {
+      font-family: 'futura_md_btmedium';
+      @include font-size(20px);
+      line-height: 30px;
+    }
+    em, span {
+      font-family: 'CenturyGothic';
+      @include font-size(16px);
+      line-height: 30px;
+      display: block;
+    }
+  }
+}
+
 .contactoView {
   padding-bottom: 40px;
   .main-promo {

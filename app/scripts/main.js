@@ -1,5 +1,5 @@
 /* jshint smarttabs:true, undef:true */
-/* global $, aload, slick */
+/* global $, aload */
 $(document).ready(function() {
 	'use strict';
 	// init aload
