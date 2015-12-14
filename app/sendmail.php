@@ -33,8 +33,7 @@ if( $form == "contacto" ) {
 	$FromEmail = $_POST["mail"];
 	$Motive = $_POST["motivo"];
 	$ReplyTo   = $FromEmail;
-	//$ToEmail = "info@cafe51.com.ar";
-	$ToEmail = "molina.mariano23@gmail.com";
+	$ToEmail = "info@cafe51.com.ar";
 	$Subject   = "Consulta desde el formulario de contato web";
 	// Datos sobre la persona
 	$consulta = $_POST['consulta'];

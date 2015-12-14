@@ -537,10 +537,11 @@ hr {
   margin: 0 auto;
 
   li {
-    @include size(50%, auto);
+    @include size(100%, auto);
     display: block;
     text-align: left;
-    float: left;
+    border-bottom: 1px solid $gray;
+    padding-bottom: 16px;
 
     figure {
       @include size(100%, auto);
@@ -652,6 +653,14 @@ input, textarea {
 }
 textarea {
   @include size(100%, 80px);
+}
+
+#success_message {
+  display: none;
+  font-family: 'futura_md_btmedium';
+  @include font-size(20px);
+  line-height: 30px;
+  text-align: center;
 }
 
 /*
@@ -790,7 +799,19 @@ textarea {
       }
     }
 
+    h2 {
+      @include font-size(18px);
+    }
   }
+  .products-list {
+    li {
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+
 }
 
 @media (max-width: 360px) {
