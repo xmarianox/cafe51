@@ -644,6 +644,11 @@ input, textarea {
   font-family: 'CenturyGothic';
   @include font-size(16px);
   line-height: 30px;
+
+  &.error {
+    border: 1px solid $red;
+    color: $red;
+  }
 }
 textarea {
   @include size(100%, 80px);
