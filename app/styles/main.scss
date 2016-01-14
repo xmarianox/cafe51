@@ -86,7 +86,7 @@ nav {
   background: url(../images/logo_cafe.png) center center no-repeat;
   background-size: cover;
   display: inline-block;
-  @include size(105px,70px);
+  @include size(111px,70px);
   text-indent: -9999px;
   margin: 10px 16px;
 }
@@ -703,6 +703,9 @@ textarea {
     @include font-size(30px);
   }
   //main
+  .main-logo {
+    @include size(60% !important, auto !important);
+  }
   .slick-slide img {
     @include size(auto, 500px);
   }
